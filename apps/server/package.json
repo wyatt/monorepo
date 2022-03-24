@@ -1,0 +1,30 @@
+{
+	"name": "@monorepo/backend",
+	"version": "1.0.0",
+	"description": "Backend for monorepo",
+	"main": "server.js",
+	"author": "Wyatt Sell",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/ioredis": "^4.28.10",
+		"nodemon": "^2.0.15",
+		"ts-node": "^10.7.0"
+	},
+	"dependencies": {
+		"@clerk/clerk-sdk-node": "^2.10.0",
+		"@monorepo/shared": "workspace:^",
+		"dotenv": "^16.0.0",
+		"fastify": "^3.27.4",
+		"fastify-cors": "^6.0.3",
+		"ioredis": "^4.28.5",
+		"typescript": "^4.5.2"
+	},
+	"scripts": {
+		"build": "tsc",
+		"dev": "nodemon src/index.ts",
+		"start": "node dist/index.js"
+	},
+	"prisma": {
+		"seed": "ts-node prisma/seed.ts"
+	}
+}

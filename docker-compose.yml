@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  redis:
+    image: redis
+    ports:
+      - '56379:6379'
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: my_username
+      POSTGRES_PASSWORD: my_password
+      POSTGRES_DB: monorepo
+    ports:
+      - '5432:5432'

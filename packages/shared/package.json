@@ -1,0 +1,11 @@
+{
+	"name": "@monorepo/shared",
+	"version": "1.0.0",
+	"license": "MIT",
+	"main": "dist/monorepo-shared.cjs.js",
+	"module": "dist/monorepo-shared.esm.js",
+	"typings": "dist/monorepo-shared.cjs.d.ts",
+	"devDependencies": {
+		"typescript": "^4.5.5"
+	}
+}

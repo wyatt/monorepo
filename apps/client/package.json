@@ -1,0 +1,26 @@
+{
+	"name": "@monorepo/frontend",
+	"version": "0.1.0",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@monorepo/shared": "workspace:^",
+		"@chakra-ui/react": "1.4.2",
+		"@emotion/react": "11",
+		"@emotion/styled": "11",
+		"@preconstruct/next": "^3.0.1",
+		"next": "12",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"sharp": "^0.30.0",
+		"swr": "^0.5.5"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.18",
+		"@types/react": "^17.0.39",
+		"typescript": "^4.5.5"
+	}
+}
